@@ -274,7 +274,7 @@ def _tsa(y, Fs, n):
         Synchronous signal
 	"""
 
-    n = np.float(n)
+    n = np.float64(n)
     k = int(y.size/n)
     yTSA = np.zeros(k, dtype = y.dtype)
     for i in range(0, int(n)):
